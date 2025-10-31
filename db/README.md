@@ -323,9 +323,9 @@ Este proyecto fue desarrollado como proyecto académico.
 
 ## 👨‍💻 Autor
 
-*Tu Nombre*
-- Email: tu@email.com
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
+*Daniela Elian Roque Santiago*
+- Email: daniellecrosbyw@gmail.com
+- GitHub: [@usernam54242](https://github.com/usernam54242)
 
 ## 🙏 Agradecimientos
 
