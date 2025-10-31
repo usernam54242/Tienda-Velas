@@ -1,0 +1,145 @@
+.adminPage {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 0;
+  background: #F9FAFB;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.formContainer {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.formContainer h2 {
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.productsTable {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.productsTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.productsTable th {
+  text-align: left;
+  padding: 1rem;
+  background: #F9FAFB;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+.productsTable td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.productImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.active {
+  color: #065F46;
+  background: #D1FAE5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.inactive {
+  color: #991B1B;
+  background: #FEE2E2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actionBtn {
+  padding: 0.5rem;
+  background: #F3F4F6;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actionBtn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.actionBtnDanger {
+  padding: 0.5rem;
+  background: #FEE2E2;
+  color: #991B1B;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actionBtnDanger:hover {
+  background: #FCA5A5;
+}
+
+@media (max-width: 768px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .productsTable {
+    font-size: 0.875rem;
+  }
+
+  .productsTable th,
+  .productsTable td {
+    padding: 0.75rem 0.5rem;
+  }
+}

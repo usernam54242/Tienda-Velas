@@ -1,0 +1,141 @@
+.cartItem {
+  display: grid;
+  grid-template-columns: 100px 1fr auto auto auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.cartItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.price {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  background: #F3F4F6;
+  border-radius: 0.5rem;
+}
+
+.quantityBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantityBtn:hover:not(:disabled) {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.quantityBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityValue {
+  font-weight: 600;
+  min-width: 30px;
+  text-align: center;
+}
+
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.subtotalLabel {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.subtotalValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+.removeBtn {
+  padding: 0.5rem;
+  background: #FEE2E2;
+  color: #991B1B;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.removeBtn:hover {
+  background: #FCA5A5;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .quantity {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .subtotal {
+    grid-column: 1 / 2;
+  }
+
+  .removeBtn {
+    grid-column: 2 / -1;
+    justify-self: end;
+  }
+}

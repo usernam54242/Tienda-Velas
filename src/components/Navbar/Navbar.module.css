@@ -1,0 +1,139 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.navLinkAdmin {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navLinkAdmin:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.userActions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: #F3F4F6;
+  color: var(--text);
+  transition: background-color 0.3s ease;
+}
+
+.userButton:hover {
+  background-color: #E5E7EB;
+}
+
+.logoutButton {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: #FEE2E2;
+  color: #991B1B;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #FCA5A5;
+}
+
+.loginButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: #F3F4F6;
+  color: var(--text);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #E5E7EB;
+}
+
+.registerButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .userButton span {
+    display: none;
+  }
+}
